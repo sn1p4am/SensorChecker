@@ -26,7 +26,7 @@ SensorChecker是一个Chrome扩展，专门用于捕获、监控和分析网页�
 
 ### 手动安装开发版
 
-1. 下载此仓库到本地（Clone或下载ZIP）
+1. 下载此仓库到本地（Clone或下载ZIP），或Release中直接下载最新ZIP压缩包
 2. 打开Chrome浏览器，进入扩展程序页面（chrome://extensions/）
 3. 开启右上角的"开发者模式"
 4. 点击"加载已解压的扩展程序"
