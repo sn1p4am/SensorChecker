@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "SensorChecker",
+    "version": "1.0",
+    "description": "神策分析(Sensors Analytics)数据捕获与分析工具，监控和解析网页中的埋点请求",
+    "permissions": [
+        "webRequest",
+        "storage",
+        "scripting",
+        "tabs",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "author": "sn1p4am",
+    "homepage_url": "https://github.com/sn1p4am/SensorChecker"
+}

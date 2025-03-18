@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensorsChecker</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <!-- 移除Tailwind CDN -->
+</head>
+
+<body class="bg-gray-100 text-gray-800 w-[800px] h-[500px] overflow-hidden">
+    <div class="flex flex-col h-full">
+        <!-- 头部 -->
+        <header class="bg-blue-600 text-white p-3 flex justify-between items-center shadow">
+            <h1 class="text-xl font-bold">SensorsChecker</h1>
+            <div class="flex space-x-2 items-center">
+                <span id="request-count" class="bg-white text-blue-600 rounded-full px-2 py-1 text-sm font-bold shadow">0</span>
+                <button id="clear-btn" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition-colors">清除</button>
+            </div>
+        </header>
+
+        <!-- 设置栏 -->
+        <div class="settings-bar bg-gray-50 p-2 border-b border-gray-300 flex justify-end items-center">
+            <div class="toggle-container flex items-center space-x-2">
+                <span class="text-sm text-gray-700">跳转时保留检测记录</span>
+                <label class="switch">
+                    <input type="checkbox" id="preserve-data-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="flex-container">
+            <!-- 左侧请求列表 -->
+            <div class="left-panel">
+                <div class="search-container">
+                    <input id="search-input" type="text" class="border border-gray-300 rounded" placeholder="搜索事件...">
+                </div>
+                <div id="request-list" class="overflow-y-auto h-[calc(100%-56px)]">
+                    <!-- 请求列表项会通过JS动态添加 -->
+                    <div class="text-center p-4 text-gray-500">暂无数据</div>
+                </div>
+            </div>
+
+            <!-- 右侧JSON内容 -->
+            <div class="right-panel">
+                <div class="panel-header">
+                    <span id="selected-event" class="font-medium">未选择事件</span>
+                    <button id="copy-json" class="text-blue-600 hover:text-blue-800 hidden">复制JSON</button>
+                </div>
+                <pre id="json-display" class="flex-1">选择左侧事件查看详情
+
+如长时间未捕获请求，双击此区域查看调试信息</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
