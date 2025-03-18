@@ -1,6 +1,27 @@
 /* 自定义样式补充 */
 
 
+/* GitHub图标样式 */
+
+.github-icon {
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+#github-link:hover .github-icon {
+    transform: scale(1.1);
+}
+
+#github-link {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+#github-link:hover {
+    opacity: 1;
+}
+
+
 /* JSON语法高亮样式 */
 
 .json-key {

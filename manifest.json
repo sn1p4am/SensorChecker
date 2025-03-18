@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "SensorChecker",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "神策分析(Sensors Analytics)数据捕获与分析工具，监控和解析网页中的埋点请求",
     "permissions": [
         "webRequest",
