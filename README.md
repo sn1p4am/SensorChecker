@@ -68,4 +68,4 @@ SensorChecker是一个Chrome扩展，专门用于捕获、监控和分析网页�
 
 ## 许可证
 
-本项目采用MIT许可证 
+本项目采用MIT许可证
