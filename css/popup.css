@@ -15,6 +15,7 @@
 #github-link {
     opacity: 0.85;
     transition: opacity 0.3s ease;
+    margin-left: 20px;
 }
 
 #github-link:hover {
